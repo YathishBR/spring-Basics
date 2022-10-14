@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+ http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="games" class="com.estuate.Cricket">
+	<property name="id" value="01"/>
+	<property name="player_name" value="KL Rahul"/>
+	<property name="role" value="Batsmen"/>
+	<property name="runs" value="12143"/>
+	<property name="wickets" value="01"/>
+	</bean>
+	<bean id="Playing" class="com.estuate.Cricket">
+	<constructor-arg name="id" value="02"/>
+	<constructor-arg name="player_name" value="Virat Kholi"/>
+	<constructor-arg name="role" value="All rounder"/>
+	<constructor-arg name="runs" value="16788"/>
+	<constructor-arg name="wickets" value="378"/>
+	</bean>
+	<bean name="win" class="com.estuate.Cricket" p:id="03" p:player_name="Buvaneshwar Kumar" p:role="Bowler" p:runs="1233" p:wickets="23"/>
+</beans>  
